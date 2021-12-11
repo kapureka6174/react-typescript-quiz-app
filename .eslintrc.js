@@ -45,6 +45,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     'react/jsx-one-expression-per-line': 'off',
+    // アロー関数を使用できるようにする
     'react/function-component-definition': [
       2,
       {
@@ -52,5 +53,10 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    // ボタンのtypeを指定しなくても良くする
+    'react/button-has-type': 'off',
+    // enumのエラーを解除
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
   },
 };
